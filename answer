@@ -1,0 +1,15 @@
+//Author : Oussoumane Mahaman Madani (GoMyCode)
+
+function produit(...$produits){
+    $pro = 1;
+
+    foreach($produits as $n){
+        
+        if ($n !== 0){//pour que 0 ne soit pas contabilisé
+            $pro *= $n;
+        }     
+    }
+    return $pro;
+}
+
+echo "le produit fait: ", produit(6, 9, -5, 0, 2);
